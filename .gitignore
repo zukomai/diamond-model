@@ -8,3 +8,5 @@
 		"git.ignoreLimitWarning": true
 	}
 }
+*.workspace
+*.code-workspace
