@@ -105,3 +105,8 @@ padding-right: 20px;
 input {
     margin-bottom: 1em;
 }
+
+img {
+    position: relative;
+}
+
