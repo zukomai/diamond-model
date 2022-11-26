@@ -3,6 +3,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -18,12 +19,31 @@
 
 .navbar a {
     text-decoration: none;
-    color: rgb(75, 75, 75);
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(43, 43, 43);
     padding: 10px;
     margin: 10px;
 }
 
 .navbar {
     background: rgb(216, 216, 216);
-    text-align: right;
+    text-align: center;
+    padding: 20px
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 2rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #666;
+    border-radius: 1rem;
 }
