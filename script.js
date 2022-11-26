@@ -2,13 +2,11 @@
 * @type HTMLCanvasElement
 */
 
-window.onload = canvas();
+const canvas = document.getElementById('canvas')
+const ctx = canvas.getContext('2d')
 
-function canvas() {
-    var myCanvas = document.querySelector('canvas');
-    if (myCanvas && myCanvas.getContext('2d')) {
-        var context = myCanvas.getContext('2d');
-        var img = document.getElementById('img1');
-        context.drawImage('img', 150, 150)
-    }
+const diamondImg = new Image();
+diamondImg.src = 'assets/diamond-model.png';
+diamondImg.onload = function() {
+    ctx.drawImage(diamondImg, 200, 150, 300, 350);
 }
